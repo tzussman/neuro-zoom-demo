@@ -62,6 +62,7 @@ export const App = () => {
 
   return (
     <Container>
+      <h1> Zoom Test </h1>
       <QuickPinchZoom onUpdate={onUpdate}>
         <video controls ref={inputRef} onPause={onPauseEvent} onPlay={onPlayEvent}>
           <source src={INPUT} type='video/mp4'/>
