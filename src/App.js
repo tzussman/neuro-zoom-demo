@@ -61,24 +61,26 @@ export const App = () => {
   }
 
   return (
-    <Container>
+    <>
       <h1> Zoom Test </h1>
-      <QuickPinchZoom onUpdate={onUpdate}>
-        <video controls ref={inputRef} onPause={onPauseEvent} onPlay={onPlayEvent}>
-          <source src={INPUT} type='video/mp4'/>
-        </video>
-      </QuickPinchZoom>
-      <QuickPinchZoom onUpdate={onUpdate}>
-        <video controls ref={outputRef} onPause={onPauseEvent} onPlay={onPlayEvent}>
-          <source src={OUTPUT} type='video/mp4'/>
-        </video>
-      </QuickPinchZoom>
-      <QuickPinchZoom onUpdate={onUpdate}>
-        <video controls ref={residRef} onPause={onPauseEvent} onPlay={onPlayEvent}>
-          <source src={RESID} type='video/mp4'/>
-        </video>
-      </QuickPinchZoom>
-    </Container>
+      <Container>
+        <QuickPinchZoom onUpdate={onUpdate}>
+          <video controls ref={inputRef} onPause={onPauseEvent} onPlay={onPlayEvent}>
+            <source src={INPUT} type='video/mp4'/>
+          </video>
+        </QuickPinchZoom>
+        <QuickPinchZoom onUpdate={onUpdate}>
+          <video controls ref={outputRef} onPause={onPauseEvent} onPlay={onPlayEvent}>
+            <source src={OUTPUT} type='video/mp4'/>
+          </video>
+        </QuickPinchZoom>
+        <QuickPinchZoom onUpdate={onUpdate}>
+          <video controls ref={residRef} onPause={onPauseEvent} onPlay={onPlayEvent}>
+            <source src={RESID} type='video/mp4'/>
+          </video>
+        </QuickPinchZoom>
+      </Container>
+    </>
   );
 };
 
